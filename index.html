@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>The Nordschleife</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Doomy" />
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <script>
+            alert("this website aint responsive yet so just zoom out/in if it looks weird or broken :P")
+        </script>
+
+        <div id="navbar">
+            <div id="nav-lef">
+                <a href="#">Information</a>
+                <a href="#">Booking</a>
+            </div>
+            <div id="nav-right">
+                <a href="#">Contact</a>
+                <a href="#">Services</a>
+            </div>
+        </div>
+        <div id="logo-container">
+            <h1 id="logo">NORDSCHLEIFE</h1>
+        </div>
+            <div id="container"></div>
+                <div id="banner">
+                    <img src="http://www.allflightmods.com/wp-content/uploads/2021/12/N%C3%BCrburgring-Nordschleife-Air-Race-v1-3.png" alt="Trackpic">
+                </div>
+        <div id="Title">
+            <h1>THE NORDSCHLEIFE <br>A DRIVER'S PLAYGROUND</h1>
+        </div>
+        <div id="text-area">
+        <div id="text">
+            <h2><span id="cool">The NORDSCHLEIFE</span><br> is a 150,000 person capacity motorsports complex located in the town of Nürburg, Rhineland-Palatinate, Germany. It features a Grand Prix race track built in 1984, and a long Nordschleife "North loop" track, built in the 1920s, around the village and medieval castle of Nürburg in the Eifel mountains. The north loop is 20.830 km (12.943 mi) long and contains more than 300 metres (1,000 feet) of elevation change from its lowest to highest points. Jackie Stewart nicknamed the track "The Green Hell".</h2>
+        </div>
+        <div id="text">
+            <h2><span id="cool">History of The NORDSCHLEIFE</span><br>Almost 95 years of racing, legendary victories and historic dramas – that‘s the story of Nürburgring. Opened in 1927 in the shadow of the more than 800-year-old “Noureburg“, the Nordschleife remains to this day one of the most beautiful and challenging race tracks in the world. But the story of the “Ring” is also about people, legend and motors..</h2>
+        </div>
+        </div>
+        <div id="pic">
+            <img src="https://www.topgear.com/sites/default/files/2023/09/SI202309090479.jpg">
+            <div id="abouts">
+                <p><a href="https://www.youtube.com/watch?v=If7waQ6b_tI">Sebastian Vettel driving on the Nordschleife</a></p>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer-container">
+                <div id="socials">
+                    <a href="https://www.youtube.com/channel/UCpus-3PUj-4_yPul9_UJepQ"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/doomyy0"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/doomyy_y"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div id=water><p>DoomyWebsites</p></div>
+            </div>
+        </div>
+        <script>
+
+            ScrollTrigger.create({
+                animation: gsap.from("#logo", {
+                    y: "50vh",
+                    scale: 6,
+                    yPercent: -50,
+                }),
+                scrub: true,
+                trigger: "#banner",
+                start: "top bottom",
+                endTrigger: "#banner",
+                end: "top center",
+            });
+        </script>
+    </body>
+</html>
